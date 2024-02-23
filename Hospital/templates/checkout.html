@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block content2 %}
+<div style="margin-left: 250px;">
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Patient Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Phone Number</th>
+            <th scope="col">Time</th>
+            <th scope="col">Address</th>
+            <th scope="col">Status</th>
+    
+          </tr>
+        </thead>
+        <tbody>
+    
+          {% for obj in patient %}
+          <tr>
+            <th scope="row">{{ forloop.counter }}</th>
+            <td>{{obj.name}}</td>
+            <td>{{obj.age}}</td>
+            <td>{{obj.gender}}</td>
+            <td>{{obj.phone_no}}</td>
+            <td>{{obj.time}}</td>
+            <td>{{obj.address}}</td>
+    
+    
+            <!-- <td>
+                <form method="POST" action="">
+                  <! hidden input field value=obj.id name=paient_id -->
+                  <!-- <button class="button"  type="submit">Mark Completed</button>
+                </form>
+            </td> --> 
+            <td>
+                <form method="POST" action="">
+                  {% csrf_token %}
+                <input type="hidden" name="patient_id" value="{{ obj.id }}">
+                <button class="button" type="submit" style="background-color: #0095ff; color: white; padding: 10px; border-radius: 10px; text-align: center; cursor: pointer;">
+                  {{obj.status}}
+                </button>
+                </form>
+               
+            </td>
+          
+          </tr>
+          
+          {% endfor %}
+    
+          
+        </tbody>
+      </table>
+    </div>  
+
+{% endblock content2 %}

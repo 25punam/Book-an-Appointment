@@ -13,7 +13,7 @@ class PatientModel(models.Model):
     phone_no = models.IntegerField()
     time = models.DateTimeField()
     address = models.CharField(max_length = 100)
-    status = models.CharField(max_length = 50, default='pending', null=True, blank=True)
+    status = models.CharField(max_length = 50, default='Mark Complete', null=True, blank=True)
     email = models.EmailField(default='True')
 
     

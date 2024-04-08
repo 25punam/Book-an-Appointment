@@ -8,14 +8,14 @@ def Patient(request):
     if request.method == 'POST':
         patient_id = request.POST.get('patient_id')
         data = PatientModel.objects.get(id=patient_id)
-        data.status = 'Mark Completed'
+        data.status = 'Complete'
         data.save()
     
 
     context = {}
     # patient_obj = PatientModel.objects.all()
     # context['patient'] = patient_obj
-    patients = PatientModel.objects.filter(status='pending').order_by('time') #use filter->pending or exclude->completed on status
+    patients = PatientModel.objects.filter(status='Mark Complete').order_by('time') #use filter->pending or exclude->completed on status
     context['patients'] = patients
     return render(request, 'table.html',context)
 
@@ -43,7 +43,7 @@ def PatientFormView(request):
 
 def checkout(request):
     context = {}
-    patient_obj = PatientModel.objects.filter(status='Mark Completed')
+    patient_obj = PatientModel.objects.filter(status='Complete')
     context['patient'] = patient_obj
     return render(request,'checkout.html',context)
 

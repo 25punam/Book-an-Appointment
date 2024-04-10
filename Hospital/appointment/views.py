@@ -29,7 +29,7 @@ def PatientFormView(request):
             send_mail(
                 'Appointment Confirmation',
                 'Thank you for booking your appointment with us!',
-                '25punamgode@gmail.com',  # Replace with your 'from' email address
+                '25punamgode@gmail.com',  
                 [email],     # Use the patient's email from the form
                 fail_silently=False,
             )

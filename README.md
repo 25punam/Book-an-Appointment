@@ -1,5 +1,5 @@
 <img width="1013" alt="apph1" src="https://github.com/25punam/Book-an-Appointment/assets/160460608/b51de83e-ed40-4b25-b7d2-b3a23f2e7308">
 <img width="1031" alt="apph2" src="https://github.com/25punam/Book-an-Appointment/assets/160460608/6ac7ca14-357e-4e1a-a724-d29b363c14d6">
-<img width="1080" alt="apph3" src="https://github.com/25punam/Book-an-Appointment/assets/160460608/f79dc451-4a64-4bb9-a5e5-54c59740399c">
-<img width="1067" alt="apph4" src="https://github.com/25punam/Book-an-Appointment/assets/160460608/99fca8dd-5a32-4a44-992f-5843205949d2">
-<img width="1046" alt="apph5" src="https://github.com/25punam/Book-an-Appointment/assets/160460608/8ffb7bbe-7b2b-4dbd-abc8-2147b6f5254f">
+<img width="1080" alt="ho3" src="https://github.com/25punam/Book-an-Appointment/assets/160460608/dfe5b3bc-c818-4473-92dc-accea35f1578">
+<img width="1080" alt="ho 4" src="https://github.com/25punam/Book-an-Appointment/assets/160460608/3ee28fe3-abee-470b-aa58-bb2e03e18b02">
+<img width="1080" alt="ho5" src="https://github.com/25punam/Book-an-Appointment/assets/160460608/7b0a5bfd-daa5-4a46-9e6f-e10ae2774161">
